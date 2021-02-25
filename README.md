@@ -18,3 +18,4 @@
 - Rework CSS format using BEM
 - JavaScript - testing and add more validation checks
 - Only have one input field and submit button (Toggle between morse decoder and encoder)
+- Add morse code beeps or blinking flash light effects
