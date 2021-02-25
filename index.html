@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORSE CODE TRANSLATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <css-doodle id="titlePage" onclick="hideTitlePage()">
+        :doodle { 
+            position: absolute;
+            z-index: 1;
+            top: -80px;
+            @grid: 15 / 100vmax;
+            background: #fcf8f5;
+        }
+        :doodle(:hover) { --s: -1;
+        }
+        :after {
+          content: @pick(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,---,---,---,-,-,-,-,-,-,-,-,-,- -,- -,- -,- -,.,.,.,.);
+          font-size: 4vmax;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          color: @pick(#161515,#161515,#161515,#161515,#161515,#f83e19);
+          transform: scale(@rand(.3, 1));
+        }
+        transition: .5s cubic-bezier(.175, .885, .32, 1.275);
+        transition-delay: @rand(650ms);
+        transform: translateY(calc(var(--s) * 100%)) rotate(calc(var(--s) * 360deg));
+    </css-doodle>
+    <div class="wrapper">
+        <div class="container">
+            <div class="input-section">
+                <input id="alphabetInput" name="alphabetInput" type="text" placeholder="Enter your text here." class="input"><button id="submit" onclick="alphabetToMorse()"><a href="#">submit</a></button>
+            </div>
+            <img src="morse-code-title.png" alt="">
+            <div class="input-section">
+                <input id="morseInput" name="morseInput" type="text" placeholder="Enter your morse code here." class="input"><button id="submit" onclick="morseToAlphabet()"><a href="#">submit</a></button>
+            </div>
+            <div class="output-section">
+                <h1 id="morseOutput"></h1>
+            </div>
+            <div class="output-section">
+                <h1 id="alphabetOutput"></h1>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/css-doodle@0.14.2/css-doodle.min.js"></script>
+</body>
+</html>

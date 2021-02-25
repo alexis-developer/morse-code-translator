@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #161515;
+    background-color: #fcf8f5;
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {  
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 130%;
+    margin: 30px;
+}
+
+.input-section {
+    padding: 50px;
+    width: 85%;
+    min-width: 425px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input.input {
+    width: 100%;
+    border-style: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    box-shadow: inset 1px 1px 2px #ececec,
+                inset -1px -1px 2px #ececec;
+    padding: 15px;
+    margin-right: 10px;
+    color: #6e6d6d;
+    background-color: #fdfcfb;
+    border-radius: 30px;
+}
+
+button {
+    font-size: 1.2em;
+    border-style: none;
+    border-radius: 30px;
+    padding: 15px;
+    color: #fdfcfb;
+    background: #161515;
+}
+
+button a {
+    text-decoration: none;
+    color: #fdfcfb;
+}
+
+button:hover {
+    background-color: #f83e19;
+}
+
+button#titlePage {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+}
+
+.output-section {
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 2em;
+
+}
+
+h1#morseOutput {
+    font-size: 3em;
+}
