@@ -103,6 +103,7 @@ const alphabetToMorse = () => {
 })
 	const result = mappedLetters.join(' '); 
 	document.getElementById("morseOutput").innerHTML = result; 
+  document.getElementById("alphabetInput").value = "";
 }
 
 const morseToAlphabet = () => {
@@ -114,9 +115,12 @@ const morseToAlphabet = () => {
 })
 	const result = mappedMorse.join(''); 
 	document.getElementById("alphabetOutput").innerHTML = result;
+  document.getElementById("morseInput").value = "";
 }
 
-const clear = () => {
-	document.getElementById("input").value = "";
-	document.getElementById("output").innerHTML = "";
+const reset = () => {
+	document.getElementById("alphabetInput").value = "";
+	document.getElementById("alphabetOutput").innerHTML = "";
+  document.getElementById("morseInput").value = "";
+	document.getElementById("morseOutput").innerHTML = "";
 }
