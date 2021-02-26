@@ -103,6 +103,7 @@ const alphabetToMorse = () => {
 })
 	const result = mappedLetters.join(' '); 
 	document.getElementById("morseOutput").innerHTML = result; 
+  document.getElementById("alphabetOutput").innerHTML = "";
   document.getElementById("alphabetInput").value = "";
 }
 
@@ -114,6 +115,7 @@ const morseToAlphabet = () => {
 	return morse[alphabet];
 })
 	const result = mappedMorse.join(''); 
+  document.getElementById("morseOutput").innerHTML = "";
 	document.getElementById("alphabetOutput").innerHTML = result;
   document.getElementById("morseInput").value = "";
 }
