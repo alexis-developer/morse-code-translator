@@ -2,6 +2,8 @@
 
 ### HTML, SCSS & JavaScript
 
+https://alexis-developer.github.io/morse-code-translator
+
 ### Specifications:
 
 - User should be able to input morse code string
