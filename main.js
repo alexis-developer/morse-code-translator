@@ -115,3 +115,8 @@ const morseToAlphabet = () => {
 	const result = mappedMorse.join(''); 
 	document.getElementById("alphabetOutput").innerHTML = result;
 }
+
+const clear = () => {
+	document.getElementById("input").value = "";
+	document.getElementById("output").innerHTML = "";
+}
