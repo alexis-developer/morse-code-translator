@@ -13,6 +13,7 @@
 ### Still to add:
 
 - Clear button
+- Make mobile responsive
 - Restyle output section
 - Add text "typing" animation for result output text
 - Rework CSS format using BEM
